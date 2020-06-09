@@ -1,4 +1,4 @@
-weatherProvider().then(
+git weatherProvider().then(
     () => {
         weatherList()
         
