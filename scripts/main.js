@@ -1,15 +1,17 @@
+weatherProvider().then(
+    () => {
+        weatherList()
+        
+        
+    }
+)
+
 getEateries().then(
     () => {
-        console.log("inside", eateryData)
+        //console.log("inside", eateryData)
         eateryList()
     }
 )
-console.log("outside", eateryData)
+//console.log("outside", eateryData)
 
-getParks().then(
-    () => {
-        console.log("inside", parkData)
-        showParkData()
-    }
-)
-console.log("outside", parkData)
+console.log(keys)
