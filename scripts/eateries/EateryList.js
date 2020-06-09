@@ -13,7 +13,7 @@ const eateryList = () => {
         const eateryHTML = eateryConverter(currentEateryObject)
 
         // Find the <article> element in index.html
-        const eateryArticleElement = document.querySelector(".park__eateries")
+        const eateryArticleElement = document.querySelector(".eateries__dropdown")
 
         // Put the location HTML representation inside the <article> element
         eateryArticleElement.innerHTML += eateryHTML
@@ -33,4 +33,4 @@ const eateryConverter = (eateryObject) => {
 
     return eateryHTMLRepresentation
 
-}
+} 
