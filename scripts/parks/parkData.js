@@ -1,13 +1,17 @@
-let parkData = []
 
+//storage for the call
+let parkData = []
+//fetch call from NPS
 const getParkData = () => {
-    return fetch().then(
+    return fetch(`{}`).then(
         (response) => {
             return response.json
         }
     )
-    .then(
-        parkData = response
+        .then(
+            (arrayOfParks) => {
+              parkData = arrayOfParks
+        }
     )
 }
 

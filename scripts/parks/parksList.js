@@ -23,6 +23,8 @@ and return it */
 const parkConverter = (parkObject) => {
     const parkHTMLRepresentation = `
     <select name = "park__list" id="">
-        <option value="park">${parkObject.parkName}
+        <option value="park">${parkObject.fullName}</option>
+    </select>
     `
+    return parkHTMLRepresentation;
 }
