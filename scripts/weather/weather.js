@@ -1,12 +1,7 @@
-const weatherConverter = (WeatherObject) => {
+const weatherConverter = (weatherObject) => {
 
     const weatherHTMLRepresentation = `
-        
-        <div class="fish__details">
-            <ul>
-                <li>Species: ${weatherObject.weather.wind}</li>
-            </ul>
-        </div>`
+                <p>${weatherObject.wind.speed}</p>`
 
     return weatherHTMLRepresentation
 
