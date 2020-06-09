@@ -5,7 +5,7 @@ let parkData = []
 const getParkData = () => {
     return fetch(`https://developer.nps.gov/api/v1/parks?q=Park&api_key=${keys.npsKey}`).then(
         (response) => {
-            return response.json
+            return response.json()
         }
     )
         .then(

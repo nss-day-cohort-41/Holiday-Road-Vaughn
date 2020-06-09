@@ -13,5 +13,11 @@ getEateries().then(
     }
 )
 //console.log("outside", eateryData)
+getParkData().then(
+    () => {
+        showParkData()
+    }
+)
+
 
 console.log(keys)
