@@ -5,7 +5,7 @@ and putting them into the browser */
 
 
 
-const showParkData = (parkData) => {
+const showParkData = () => {
     //iterate the collection of park objects
     for (const currentParkObject of parkData) {
         //convert the current obj to its html
@@ -21,10 +21,9 @@ const showParkData = (parkData) => {
 and return it */
 
 const parkConverter = (parkObject) => {
-    const parkHTMLRepresentation = `
-    <select name = "park__list" id="">
+    const parkHTMLRepresentation = `<select name = "park__list" id="">
         <option value="park">${parkObject.fullName}</option>
-    </select>
-    `
+    </select>`
+    
     return parkHTMLRepresentation;
 }
