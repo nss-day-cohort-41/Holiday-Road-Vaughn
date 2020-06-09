@@ -1,7 +1,13 @@
 const weatherConverter = (weatherObject) => {
 
     const weatherHTMLRepresentation = `
-                <p>${weatherObject.wind.speed}</p>`
+                <ul>
+                    <li>date: ${weatherObject.dt_txt}</li>
+                    <li>Low: ${weatherObject.main.temp_min} F</li>
+                    <li> high: ${weatherObject.main.temp_max} F</li>
+                    <li>${weatherObject.weather[0].description}</li>
+                    <li>humidity: ${weatherObject.main.humidity}%</li>
+                </ul>`
 
     return weatherHTMLRepresentation
 

@@ -13,5 +13,3 @@ getEateries().then(
     }
 )
 //console.log("outside", eateryData)
-
-console.log(keys)
