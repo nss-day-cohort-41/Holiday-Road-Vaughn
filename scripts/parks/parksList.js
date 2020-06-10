@@ -7,9 +7,9 @@ and putting them into the browser */
 
 const showParkData = () => {
     //iterate the collection of park objects
-    for (const currentParkObject of parkData) {
+    for (const key in codes) {
         //convert the current obj to its html
-        const parkHTML = parkConverter(currentParkObject)
+        const parkHTML = parkConverter(key,codes[key])
         // find the <article> element in index.html
         const parkArticleElement = document.querySelector(".park__list")
         //put the location html representation inside the <article> element
@@ -20,10 +20,11 @@ const showParkData = () => {
 /* This function will convert a single location object to a HTML representation 
 and return it */
 
-const parkConverter = (parkObject) => {
-    const parkHTMLRepresentation = `<select name = "park__list" id="">
-        <option value="park">${parkObject.fullName}</option>
-    </select>`
+const parkConverter = (parkObject, code) => {
+    console.log(parkObject, code)
+    const parkHTMLRepresentation = `
+        <option class="value=${code}>${parkObject}</option>
+    `
     
     return parkHTMLRepresentation;
 }
