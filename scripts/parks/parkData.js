@@ -5,7 +5,6 @@ let parkData = [];
 const getParkData = (codes) => {
     return fetch(`https://developer.nps.gov/api/v1/parks?parkCode=${codes}&api_key=${keys.npsKey}`).then(
         (response) => {
-            console.log(codes, "get park data")
             return response.json()
 
         }
@@ -20,7 +19,8 @@ const getParkData = (codes) => {
 
 document.querySelector(".park__list").addEventListener("change", e=>{
    let target =e.target.value
-         getParkData(target)
+         getParkData(target).then()
+         console.log(target, "get target data")
     })
 
 

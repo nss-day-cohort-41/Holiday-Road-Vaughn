@@ -18,10 +18,10 @@ const showParkData = () => {
 }
 
 /* This function will convert a single location object to a HTML representation 
-and return it */
+and return it to the selector box */
 
 const parkConverter = (parkObject, codes) => {
-    console.log(codes, parkObject)
+
     const parkHTMLRepresentation = `
         <option class="park" value=${parkObject}>${codes}</option>
     `
