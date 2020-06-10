@@ -12,10 +12,16 @@ getEateries().then(
         eateryList()
     }
 )
+
 //console.log("outside", eateryData)
 
 getAttractions().then(
     () => {
         attractionList()
+    }
+)
+getParkData().then(
+    () => {
+        showParkData()
     }
 )
