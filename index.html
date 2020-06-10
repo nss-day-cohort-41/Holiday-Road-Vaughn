@@ -9,29 +9,34 @@
 <body>
     <main>
         <header>
-            <section class="banner">
-                <div class="logo">Logo</div>
-                <div class="title">Title</div>
-            </section>
+            <!--adding flex container for banner-->
+            <div class="banner-flex-container">
+                <div class="logo-flex-element">Logo</div>
+                <h1 class="title-flex-element">The Best website ever!!!</h1>
+            </div>
         </header>
-        <h1>The Best website ever!!!</h1>
+        
                 
             <section class="dropdown__container">
                 <select class="park__list" id="">
                     
                 </select>
                 <select class="bizarre__list" id="">
-                    <option value="park">bizarre1</option>
-                    <option value="park">park2</option>
-                    <option value="park">park3</option>
-                    <option value="park">park4</option>
+                    <option value="park">Choose Attraction</option>
                 </select>
+
+                <button class="show__attraction__details">Attraction Details</button>
+
                 <select class="eateries__dropdown" id="">
                     <option value="">Choose Eatery</option>
                 </select>
+                
+                    <button class="show__eatery__details">Eatery Details</button>
+                
+
                 <button class="save_itenerary">save itenerary</button>
             </section>
-        
+        <!--Looking to flex weather data to the right side of the page-->
         <article class="itenerary__preview">
             <section class="park__preview">
                 <div class="park__details">
@@ -41,9 +46,7 @@
                 <div class="park__attractions">
                     <button class="park__attractions__button">Details</button>
                 </div>
-                <div class="park__eateries">
-                    <button class="park__eateries__button">Details</button>
-                </div>
+                
             </section>
             
             <section class="current_weather" style=" height: 20rem;">
@@ -71,6 +74,8 @@
     <script src="/scripts/weather/WeatherProvider.js"></script>
     <script src="scripts/eateries/EateryList.js"></script>
     <script src="scripts/eateries/EateryProvider.js"></script>
+    <script src="scripts/attractions/AttractionList.js"></script>
+    <script src="scripts/attractions/AttractionProvider.js"></script>
     <script src="scripts/main.js"></script>
     
 </body>
