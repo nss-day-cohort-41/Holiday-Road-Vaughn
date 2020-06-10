@@ -32,7 +32,8 @@ const eateryConverter = (eateryObject) => {
     return eateryHTMLRepresentation
 
 } 
-/*
+/* playing with this to get the details button to populate
+
 const eateryDetailsButton = document.querySelector(".show__eatery__details")
 
 eateryDetailsButton.addEventListener("change", (changeEvent) => {
