@@ -1,12 +1,11 @@
-let attractionData = []
+let attractionData = [];
 
-const myBizarre = () => attraction
-
-const getBizarre = () => {
-    return fetch("http://holidayroad.nss.team/bizarreries")
-      .then((httpresponse) => httpresponse.json())
-
-      .then((bizzarieArray) => {
-        attractionData = bizzarieArray;
-      });
-}
+const getAttractions = () => {
+  return fetch("http://holidayroad.nss.team/bizarreries")
+    .then((httpResponse) => {
+      return httpResponse.json();
+    })
+    .then((arrayOfAttractions) => {
+      attractionData = arrayOfAttractions;
+    });
+};
