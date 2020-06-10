@@ -3,7 +3,7 @@
 Responsible for generating a list of eatery HTML
 representations, and putting in the browser
 */
-// import {myEateries} from"./EateryProvider.js"
+
 
 const eateryList = () => {
     // Iterate the collection of eatery objects
