@@ -1,4 +1,4 @@
-git weatherProvider().then(
+weatherProvider().then(
     () => {
         weatherList()
         
@@ -12,12 +12,10 @@ getEateries().then(
         eateryList()
     }
 )
+
 //console.log("outside", eateryData)
 getParkData().then(
     () => {
         showParkData()
     }
 )
-
-
-console.log(keys)
