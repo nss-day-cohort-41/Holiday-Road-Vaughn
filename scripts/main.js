@@ -17,5 +17,7 @@ getEateries().then(
 getParkData().then(
     () => {
         showParkData()
+        
     }
 )
+
