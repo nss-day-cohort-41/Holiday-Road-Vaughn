@@ -9,18 +9,6 @@ getEateries().then(() => {
 
 //console.log("outside", eateryData)
 
-<<<<<<< HEAD
-getAttractions().then(() => {
-  attractionList();
-});
-getParkData().then(() => {
-  showParkData();
-});
-
-
-
-
-=======
 getAttractions().then(
     () => {
         attractionList()
@@ -31,4 +19,3 @@ getParkData().then(
         showParkData()
     }
 )
->>>>>>> master
