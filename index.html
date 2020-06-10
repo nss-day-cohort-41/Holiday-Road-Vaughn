@@ -24,15 +24,19 @@
                     <option value="park">park3</option>
                     <option value="park">park4</option>
                 </select>
-                <select name="bizarre__list" id="">
-                    <option value="park">bizarre1</option>
-                    <option value="park">park2</option>
-                    <option value="park">park3</option>
-                    <option value="park">park4</option>
+                <select class="bizarre__list" id="">
+                    <option value="park">Choose Attraction</option>
                 </select>
+
+                <button class="show__attraction__details">Attraction Details</button>
+
                 <select class="eateries__dropdown" id="">
                     <option value="">Choose Eatery</option>
                 </select>
+                
+                    <button class="show__eatery__details">Eatery Details</button>
+                
+
                 <button class="save_itenerary">save itenerary</button>
             </section>
         <!--Looking to flex weather data to the right side of the page-->
@@ -52,9 +56,7 @@
                 <div class="park__attractions">
                     <button class="park__attractions__button">Details</button>
                 </div>
-                <div class="park__eateries">
-                    <button class="park__eateries__button">Details</button>
-                </div>
+                
             </section>
         </article>
         <aside class="saved__iteneraries">
@@ -74,6 +76,8 @@
     <script src="/scripts/weather/WeatherProvider.js"></script>
     <script src="scripts/eateries/EateryList.js"></script>
     <script src="scripts/eateries/EateryProvider.js"></script>
+    <script src="scripts/attractions/AttractionList.js"></script>
+    <script src="scripts/attractions/AttractionProvider.js"></script>
     <script src="scripts/main.js"></script>
     
 </body>

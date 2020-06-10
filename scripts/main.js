@@ -13,3 +13,9 @@ getEateries().then(
     }
 )
 //console.log("outside", eateryData)
+
+getAttractions().then(
+    () => {
+        attractionList()
+    }
+)
