@@ -12,10 +12,17 @@ getAttractions().then(() => {
 });
 console.log("outside", attractionProvider);
 
+weatherProvider().then(
+    () => {
+        weatherList()
+        
+        
+    }
+)
 
 getEateries().then(
     () => {
-        console.log("inside", eateryData)
+        //console.log("inside", eateryData)
         eateryList()
     }
 )
@@ -30,3 +37,10 @@ getDirection().then(
     }
 )
 //console.log("outside", directionData)
+
+//console.log("outside", eateryData)
+getParkData().then(
+    () => {
+        showParkData()
+    }
+)
