@@ -11,7 +11,7 @@ const attractionList = () => {
     const attractionHTML = attractionConverter(currentAttractionObject);
 
     // Find the <article> element in index.html
-    const attractionArticleElement = document.querySelector(".bizzaries__dropdown");
+    const attractionArticleElement = document.querySelector(".bizarres__dropdown");
 
     // Put the attraction HTML representation inside the <article> element
     attractionArticleElement.innerHTML += attractionHTML;

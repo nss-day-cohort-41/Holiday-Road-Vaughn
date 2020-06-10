@@ -1,8 +1,8 @@
 let attractionData = []
 
-const myBizzarie = () => attraction
+const myBizarre = () => attraction
 
-const getBizzarie = () => {
+const getBizarre = () => {
     return fetch("http://holidayroad.nss.team/bizarreries")
       .then((httpresponse) => httpresponse.json())
 
