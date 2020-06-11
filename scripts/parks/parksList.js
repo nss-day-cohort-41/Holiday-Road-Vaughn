@@ -1,6 +1,6 @@
 
 const contentTarget = document.querySelector(".park__selected")
-const clearParkData = () => contentTarget.innerHTML = ""
+
 
 const showParkData = (parkData) => {
     for (const data of parkData.data) {
@@ -12,7 +12,8 @@ const showParkData = (parkData) => {
 const parkConverter = (data) => {
     const parkHTML = `
     <section class="park">
-        <p> ${parkData.data[0].fullName} </p>
+        <h3 class="park__name"> ${parkData.data[0].fullName} </h3>
+            <p class="par__details"> </p>
     </section>
     `
     return parkHTML;
