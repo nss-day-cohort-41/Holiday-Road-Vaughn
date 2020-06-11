@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Holiday Road</title>
-   
+    <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
     <main>
@@ -40,13 +40,6 @@
         <article class="itinerary__preview">
             <section class="bizDetails"></section>
             <section class="eateryDetails"></section>
-            <section class="current_weather" style=" height: 20rem;">
-                <h1>The Weather</h1>
-
-                
-            
-            </section>
-            <!--Will need flex for Details buttons-->
             <section class="park__preview">
                 <div class="park__details">
                     <button class="park__details__button">Details</button>
@@ -57,12 +50,19 @@
                 </div>
                 
             </section>
+            <section class="park__selected">
 
+            </section>
             
+            <section class="current_weather" style=" height: 20rem;">
+                <h1>The Weather</h1>
+            </section>
+
         </article>
         <aside class="saved__itineraries">
 
         </aside>
+        
         <footer>
             <div class="about__us"></div>
             <div class="contact"></div>
@@ -75,6 +75,7 @@
     <script src="./scripts/parks/parksList.js"></script>
     <script src="scripts/parks/dropdown.js"></script>
     <script src="scripts/parks/parkData.js"></script>
+    <script src="/scripts/weather/locationGrabber.js"></script>
     <script src="/scripts/weather/weather.js"></script>
     <script src="/scripts/weather/weatherList.js"></script>
     <script src="/scripts/weather/WeatherProvider.js"></script>
