@@ -1,30 +1,19 @@
 
-/* responsible for making a list of park html representations
-and putting them into the browser */
-//import 
+const contentTarget = document.querySelector(".park__selected")
+const clearParkData = () => contentTarget.innerHTML = ""
 
-
-
-const showParkData = () => {
-    //iterate the collection of park objects
-    for (const key in codes) {
-        //convert the current obj to its html
-        const parkHTML = parkConverter(key,codes[key])
-        // find the <article> element in index.html
-        const parkArticleElement = document.querySelector(".park__list")
-        //put the location html representation inside the <article> element
+const showParkData = (parkData) => {
+    for (const data of parkData.data) {
+        const parkHTML = parkConverter(data)
+        const parkArticleElement = document.querySelector(".park__selected")
         parkArticleElement.innerHTML += parkHTML
     }
 }
-
-/* This function will convert a single location object to a HTML representation 
-and return it */
-
-const parkConverter = (parkObject, codes) => {
-    console.log(codes, parkObject)
-    const parkHTMLRepresentation = `
-        <option class="park" value=${parkObject}>${codes}</option>
+const parkConverter = (data) => {
+    const parkHTML = `
+    <section class="park">
+        <p> ${parkData.data[0].fullName} </p>
+    </section>
     `
-    
-    return parkHTMLRepresentation;
+    return parkHTML;
 }
