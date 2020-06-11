@@ -1,6 +1,7 @@
-weatherProvider().then(() => {
+/*weatherProvider().then(() => {
   weatherList();
 });
+*/
 showParkDropDown()
 
 
@@ -16,4 +17,3 @@ getAttractions().then(
         attractionList()
     }
 )
-
