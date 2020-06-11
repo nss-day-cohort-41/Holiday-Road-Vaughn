@@ -1,7 +1,6 @@
 
 //storage for the call
 let parkData = [];
-console.log(parkData)
 
 //fetch call from NPS
 const getParkData = (codes) => {
@@ -13,7 +12,6 @@ const getParkData = (codes) => {
     .then(
         (objOfData) => {
             parkData = objOfData
-            console.log(parkData)
             return parkData
         }
     )
@@ -23,7 +21,6 @@ let parkDataSelector = document.querySelector(".park__list").addEventListener("c
    let target =e.target.value
    getParkData(target).then(
     (parkData) => {
-        console.log(parkData)
         showParkData(parkData)
     }
  
