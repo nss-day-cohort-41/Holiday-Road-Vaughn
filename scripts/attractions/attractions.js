@@ -1,7 +1,7 @@
-const attractionConverter = (attractionObject) => {
+const attractionTacoConverter = (attractionObject) => { 
   const attractionHTMLRepresentation = `
                 <ul>
-                    <li>id: ${attractionObject}</li>
+                    <li>id: ${attractionObject.id}</li>
                     <li>name:${attractionObject.name}</li>
                     <li>state: ${attractionObject.state}</li>
                     <li>city: ${attractionObject.city}</li>
