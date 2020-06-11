@@ -1,15 +1,11 @@
 export default {
-  graphhopperKey:
-    "",
+  graphhopperKey: "",
 
-  npsKey:
-    "",
+  npsKey: "",
 
-  weatherKey:
-    "",
+  weatherKey: "",
 
   bizarreDestination: "",
 
   eateriesDestination: "",
 };
-
