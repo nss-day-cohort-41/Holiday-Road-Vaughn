@@ -1,7 +1,6 @@
 let eateryData = []
 
-
- const getEateries = () => {
+const getEateries = () => {
     return fetch("http://holidayroad.nss.team/eateries").then(
         (httpResponse) => {
             return httpResponse.json()
@@ -9,12 +8,13 @@ let eateryData = []
     )
         .then(
             (arrayOfEateries) => {
-                eateryData = arrayOfEateries
+            eateryData = arrayOfEateries
+            console.log(eateryData)
+
+            
             }
         )
 
 
 
 }
-
-

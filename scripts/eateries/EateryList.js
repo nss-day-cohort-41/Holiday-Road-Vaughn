@@ -1,3 +1,47 @@
+const eateryDetailsButton = document.querySelector(
+  ".show__eatery__details"
+);
+
+eateryDetailsButton.addEventListener("click", (event) => {
+//   document.querySelector(".eateryList").classList.toggle("hidden");
+    let eateryDropdown = document.querySelector(".eateries__dropdown").value;
+    console.log(eateryDropdown)
+
+    let eateryDetailsData = [];
+
+    const getEateryDetails = () => {
+      return fetch(
+        "http://holidayroad.nss.team/eateries"
+      )
+        .then((httpResponse) => {
+          return httpResponse.json();
+        })
+        .then((arrayofEateries) => {
+            eateryDetailsData = arrayofEateries;
+
+            let iterator = []
+            
+            for (i = 0; i < eateryDetailsData.length; i++) {
+                // console.log(eateryDetailsData[i].id);
+                if (eateryDropdown == eateryDetailsData[i].id) {
+                    // console.log(
+                    //   eateryDetailsData[i].id + eateryDetailsData[i].name + eateryDetailsData[i].description
+                     iterator = eateryDetailsData[i];
+                    // return eateryDetailsData[i]
+                    
+                }
+            }
+            
+            return iterator
+        }).then((data) => { 
+            populateDropdown(data)
+            
+            
+        })
+    };
+
+    getEateryDetails()
+});
 
 /*
 Responsible for generating a list of eatery HTML
@@ -19,42 +63,18 @@ const eateryList = () => {
 }
 
 
-/*
-    This function will convert a single location object to an
-    HTML representation and return it
-*/
-const eateryConverter = (eateryObject) => {
+const populateDropdown =(object) => { console.log (object)
+  // Iterate the collection of attraction objects
+//   for (const currentEateryObject of eateryData) {
+    // Convert the current location to its HTML representation
+    let eat = object
+    const eateryHTML = eateryDetailsConverter(eat);
+    
 
-    const eateryHTMLRepresentation = `<select name="eateries__list" id="">
-    <option value="park">${eateryObject.businessName}</option>
-</select>`
+    // Find the <section>  (.eateryDetails)element in index.html
+    const eateryArticleElement = document.querySelector(".eateryDetails");
 
-    return eateryHTMLRepresentation
-
-} 
-/* playing with this to get the details button to populate
-
-const eateryDetailsButton = document.querySelector(".show__eatery__details")
-
-eateryDetailsButton.addEventListener("change", (changeEvent) => {
-    const userChoice = changeEvent.target.value
-
-    if (userChoice == `${eateryObject.businessName}`) {
-        displayDetails();
-    }
-})
-
-const displayDetails = () => {
-    const details = eateryDetails()
-
-    for (const detailsObject of details) {
-        const eateryDetailsHTMLRepresentation = detailConverter(detailsObject)
-
-        const eateryArticleElement.innerHTML = document.querySelector("")
-    }
-
-     
-
-
-}
-*/
+    // Put the location HTML representation inside the <article> element
+    eateryArticleElement.innerHTML = eateryHTML;
+//   }
+};

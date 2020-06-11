@@ -4,12 +4,19 @@ weatherProvider().then(() => {
 showParkDropDown()
 
 
-getEateries().then(() => {
-  //console.log("inside", eateryData)
-  eateryList();
-});
+weatherProvider().then(
+    () => {
+        weatherList()
+        
+        
+    }
+)
 
-//console.log("outside", eateryData)
+getEateries().then(
+    () => {
+        eateryList()
+    }
+)
 
 getAttractions().then(
     () => {
