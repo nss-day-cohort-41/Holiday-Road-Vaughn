@@ -6,7 +6,8 @@ const attractionTacoConverter = (attractionObject) => {
                     <li>state: ${attractionObject.state}</li>
                     <li>city: ${attractionObject.city}</li>
                     <li>description: ${attractionObject.description}</li>
-                    <li>ameneties: ${attractionObject.ameneties}</li>
+                    <li>restrooms: ${attractionObject.ameneties.restrooms}</li>
+                    <li>souvenirs: ${attractionObject.ameneties.souvenirs}</li>
 
                 </ul>`;
 

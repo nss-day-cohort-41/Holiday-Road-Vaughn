@@ -33,8 +33,8 @@ attractionVisibilityButton.addEventListener("click", (event) => {
             }
             // This data is Taco
             return taco
-        }).then((data) => { 
-            steve(data)
+        }).then((bizData) => { 
+            steve(bizData)
             
             
         })
