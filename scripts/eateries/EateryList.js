@@ -25,36 +25,31 @@ const eateryList = () => {
 */
 const eateryConverter = (eateryObject) => {
 
-    const eateryHTMLRepresentation = `<select name="eateries__list" id="">
-    <option value="park">${eateryObject.businessName}</option>
-</select>`
+    const eateryHTMLRepresentation = `
+    <option value="eatery">${eateryObject.businessName}</option>`
 
     return eateryHTMLRepresentation
 
 } 
-/* playing with this to get the details button to populate
+//var select = document.getElementsByClassName(".eateries__dropdown");
+//var result = eateryConverter
+//alert(result);
 
-const eateryDetailsButton = document.querySelector(".show__eatery__details")
+const displayDetails = () => {
+    const detailHTMLRepresentation = `
+    alert("${eateryObject.description})`
+
+    return detailHTMLRepresentation
+}     
+
+
+const eateryDetailsButton = document.querySelector(".eateries__dropdown")
 
 eateryDetailsButton.addEventListener("change", (changeEvent) => {
     const userChoice = changeEvent.target.value
 
-    if (userChoice == `${eateryObject.businessName}`) {
+    if (userChoice == `${eateryData.businessName}`) {
         displayDetails();
     }
 })
 
-const displayDetails = () => {
-    const details = eateryDetails()
-
-    for (const detailsObject of details) {
-        const eateryDetailsHTMLRepresentation = detailConverter(detailsObject)
-
-        const eateryArticleElement.innerHTML = document.querySelector("")
-    }
-
-     
-
-
-}
-*/
