@@ -9,7 +9,10 @@ let attractionData = []
     )
         .then(
             (arrayOfAttractions) => {
-                attractionData = arrayOfAttractions
+            attractionData = arrayOfAttractions
+            console.log(attractionData)
+
+            
             }
         )
 
