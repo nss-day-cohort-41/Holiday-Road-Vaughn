@@ -23,7 +23,7 @@
                     <option value="null">Choose National Park</option>
                 </select>
 
-                <button class="show__park_details"> Park Details</button>
+                <button onclick="parkDetailButton()" class="show__park_details"> Park Details</button>
 
                 <select class="bizarre__list" id="">
                     <option value="park">Choose Attraction</option>
@@ -52,8 +52,7 @@
             </section>
             <!--Will need flex for Details buttons-->
             <section class="park__preview">
-                <div class="park__selected">
-                </div>
+                <div class="park__selected"> </div>
                 <div class="weather"></div>
                 <div class="park__attractions">
                     <button class="park__attractions__button">Details</button>
@@ -74,7 +73,6 @@
         </footer>
     </main>
     <script src="./scripts/Settings.js"></script>
-    <script src="./scripts/parks/parkDetailConverter.js"></script>
     <script src="./scripts/parks/parkCode.js"></script>
     <script src="./scripts/parks/parksList.js"></script>
     <script src="scripts/parks/parkDropDown.js"></script>

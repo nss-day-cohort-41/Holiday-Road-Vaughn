@@ -24,6 +24,7 @@ let parkDataSelector = document.querySelector(".park__list").addEventListener("c
      getParkData(target).then(
          (parkData) => {
              showParkData(parkData)
+             return parkData
                      }
                 )
         }

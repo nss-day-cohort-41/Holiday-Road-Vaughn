@@ -1,9 +1,10 @@
 
 
-
-
-let parkDetailsButton = document.querySelector(".show__park_details").addEventListener("click", clickEvent=> {
-    let parkDetailsArticle = document.querySelector(".park__selected").classList.toggle("hidden")
+const parkDetailButton = () => {
+    const detailButton =document.querySelector(".park__class");
+    if (detailButton.style.display === "none") {
+        detailButton.style.display = "block";
+    } else {
+        detailButton.style.display = "none";
     }
-)
-
+ }
