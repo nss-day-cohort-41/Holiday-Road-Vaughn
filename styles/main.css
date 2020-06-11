@@ -1,3 +1,11 @@
+@import "weather.css";
+
+
 .itenerary__preview {
-    background-color: rgba(0, 255, 255, 0.719);
+    display: flex;
+    
+}
+
+.park__details__button {
+    flex: 1 1 70%;
 }
