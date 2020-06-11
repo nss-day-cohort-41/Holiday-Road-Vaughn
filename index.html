@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.css">
     <title>Holiday Road</title>
-   
+    <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
     <main>
@@ -22,8 +22,6 @@
                 <select class="park__list" id="">
                     <option value="null">Choose National Park</option>
                 </select>
-
-                <button onclick="parkDetailButton()" class="show__park_details"> Park Details</button>
 
                 <select class="bizarre__list" id="">
                     <option value="park">Choose Attraction</option>
@@ -44,13 +42,6 @@
         <article class="itinerary__preview">
             <section class="bizDetails"></section>
             <section class="eateryDetails"></section>
-            <section class="current_weather" style=" height: 20rem;">
-                <h1>The Weather</h1>
-
-                
-            
-            </section>
-            <!--Will need flex for Details buttons-->
             <section class="park__preview">
                 <div class="park__selected"> </div>
                 <div class="weather"></div>
@@ -59,12 +50,19 @@
                 </div>
                 
             </section>
+            <section class="park__selected">
 
+            </section>
             
+            <section class="current_weather" style=" height: 20rem;">
+                <h1>The Weather</h1>
+            </section>
+
         </article>
         <aside class="saved__itineraries">
 
         </aside>
+        
         <footer>
             <div class="about__us"></div>
             <div class="contact"></div>
@@ -78,6 +76,7 @@
     <script src="scripts/parks/parkDropDown.js"></script>
     <script src="scripts/parks/parkData.js"></script>
     <script src="./scripts/parks/parkDetailButton.js"></script>
+    <script src="/scripts/weather/locationGrabber.js"></script>
     <script src="/scripts/weather/weather.js"></script>
     <script src="/scripts/weather/weatherList.js"></script>
     <script src="/scripts/weather/WeatherProvider.js"></script>

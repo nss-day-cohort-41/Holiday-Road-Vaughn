@@ -2,6 +2,7 @@ const weatherConverter = (weatherObject) => {
 
     const weatherHTMLRepresentation = `
                 <ul>
+                    <li>Location: ${forecastData.city.name}</li>
                     <li>date: ${weatherObject.dt_txt}</li>
                     <li>Low: ${weatherObject.main.temp_min} F</li>
                     <li> high: ${weatherObject.main.temp_max} F</li>
