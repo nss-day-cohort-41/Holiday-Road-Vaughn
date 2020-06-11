@@ -2,8 +2,8 @@ let forecastData = [];
 
 
 
-const weatherProvider = () => {
-    return fetch(`https://api.openweathermap.org/data/2.5/forecast?q=37216,us&units=imperial&appid=${keys.weatherKey}`).then(
+const weatherProvider = (zipCode) => {
+    return fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${zipCode},us&units=imperial&appid=${keys.weatherKey}`).then(
         (response) => {
             return response.json()
         }
@@ -14,3 +14,6 @@ const weatherProvider = () => {
         }
     )
 }
+
+//need a then statement 
+//invoke weatherprovider inside then statment inside p
