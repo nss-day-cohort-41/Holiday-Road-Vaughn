@@ -12,7 +12,7 @@ weatherProvider().then(
 getEateries().then(
     () => {
         //console.log("inside", eateryData)
-        eateryList()
+        showEateryList()
     }
 )
 

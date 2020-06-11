@@ -1,9 +1,8 @@
-
 /*
 Responsible for generating a list of eatery HTML
 representations, and putting in the browser
 */
-const eateryList = () => {
+const showEateryList = () => {
     // Iterate the collection of eatery objects
     for (const currentEateryObject of eateryData) {
 
@@ -31,25 +30,3 @@ const eateryConverter = (eateryObject) => {
     return eateryHTMLRepresentation
 
 } 
-//var select = document.getElementsByClassName(".eateries__dropdown");
-//var result = eateryConverter
-//alert(result);
-
-const displayDetails = () => {
-    const detailHTMLRepresentation = `
-    alert("${eateryObject.description})`
-
-    return detailHTMLRepresentation
-}     
-
-
-const eateryDetailsButton = document.querySelector(".eateries__dropdown")
-
-eateryDetailsButton.addEventListener("change", (changeEvent) => {
-    const userChoice = changeEvent.target.value
-
-    if (userChoice == `${eateryData.businessName}`) {
-        displayDetails();
-    }
-})
-
