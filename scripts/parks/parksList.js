@@ -13,7 +13,7 @@ const parkConverter = (data) => {
     const parkHTML = `
     <section class="park">
         <h3 class="park__name"> ${parkData.data[0].fullName} </h3>
-            <p class="par__details"> </p>
+            <p class="park__details"> blue</p>
     </section>
     `
     return parkHTML;

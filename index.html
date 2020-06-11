@@ -22,6 +22,9 @@
                 <select class="park__list" id="">
                     <option value="null">Choose National Park</option>
                 </select>
+
+                <button class="show__park_details"> Park Details</button>
+
                 <select class="bizarre__list" id="">
                     <option value="park">Choose Attraction</option>
                 </select>
@@ -39,9 +42,7 @@
             </section>
         <!--Looking to flex weather data to the right side of the page-->
         <article class="itenerary__preview">
-            <section class="park__selected">
 
-            </section>
             <section class="current_weather" style=" height: 20rem;">
                 <h1>The Weather</h1>
 
@@ -50,8 +51,7 @@
             </section>
             <!--Will need flex for Details buttons-->
             <section class="park__preview">
-                <div class="park__details">
-                    <button class="park__details__button">Details</button>
+                <div class="park__selected">
                 </div>
                 <div class="weather"></div>
                 <div class="park__attractions">
@@ -73,8 +73,9 @@
     <script src="./scripts/Settings.js"></script>
     <script src="./scripts/parks/parkCode.js"></script>
     <script src="./scripts/parks/parkslist.js"></script>
-    <script src="scripts/parks/dropdown.js"></script>
+    <script src="scripts/parks/parkDropDown.js"></script>
     <script src="scripts/parks/parkData.js"></script>
+    <script src="./scripts/parks/parkDetailButton.js"></script>
     <script src="/scripts/weather/weather.js"></script>
     <script src="/scripts/weather/weatherList.js"></script>
     <script src="/scripts/weather/WeatherProvider.js"></script>
