@@ -1,6 +1,7 @@
 
 //storage for the call
 let parkData = [];
+//let zipCode
 
 //fetch call from NPS
 const getParkData = (codes) => {
