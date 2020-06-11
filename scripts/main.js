@@ -1,3 +1,6 @@
+showParkDropDown()
+
+
 weatherProvider().then(
     () => {
         weatherList()
@@ -18,17 +21,6 @@ getEateries().then(
 getAttractions().then(
     () => {
         attractionList()
-    }
-)
-getParkData().then(
-    () => {
-        showParkData()
-        //Brendan here.  Below should extract park object
-       // parkDataListforZip()
-        //console.log(theZipCodeForThePark)
-        //console.log("hello!!!", target)
-        
-        
     }
 )
 
