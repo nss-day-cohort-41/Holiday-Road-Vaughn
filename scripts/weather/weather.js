@@ -1,9 +1,3 @@
-/*
-const unixToHuman = (unix) => {
-    const day = new Date(unix*1000)
-    return `${day}`
-}
-*/
 const unixToHuman = (unix) => {
     const day = new Date(unix*1000)
     return day
@@ -25,10 +19,3 @@ const weatherConverter = (weatherObject) => {
     return weatherHTMLRepresentation
 
 }
-
-
-/*
-//put these back in html later
-
-
-*/

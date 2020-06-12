@@ -9,7 +9,7 @@ const weatherList = () => {
         weatherArticleElement.innerHTML += weatherHTML
     }
 }
-//set a new querySelector to display current weather only once...tomorrow
+//new querySelector to display current weather only once
 
 const currnetWeatherList = () => {
     const currentWeatherHTML = `<h3>Currently: ${forecastData.current.temp} F with ${forecastData.current.weather[0].main}. Seven Day Forecast:</h3>`
