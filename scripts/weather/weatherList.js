@@ -9,3 +9,4 @@ const weatherList = () => {
         weatherArticleElement.innerHTML += weatherHTML
     }
 }
+//set a new querySelector to display current weather only once...tomorrow
