@@ -14,6 +14,22 @@ const attractionTacoConverter = (attractionObject) => {
   return attractionHTMLRepresentation;
 };
 
+const attractionBizConverter = (attractionBizObject) => {
+  const attractionHTMLRepresentation = `
+                <ul>
+                    
+                    <li>name:${attractionBizObject.name}</li>
+                    <li>state: ${attractionBizObject.state}</li>
+                    <li>city: ${attractionBizObject.city}</li>
+                    <li>description: ${attractionBizObject.description}</li>
+                    <li>restrooms: ${attractionBizObject.ameneties.restrooms}</li>
+                    <li>souvenirs: ${attractionBizObject.ameneties.souvenirs}</li>
+
+                </ul>`;
+
+  return attractionHTMLRepresentation;
+};
+
 // [
 //   {
 //     "id": 1,
