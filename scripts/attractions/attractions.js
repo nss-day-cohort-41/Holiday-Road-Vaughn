@@ -6,7 +6,24 @@ const attractionTacoConverter = (attractionObject) => {
                     <li>state: ${attractionObject.state}</li>
                     <li>city: ${attractionObject.city}</li>
                     <li>description: ${attractionObject.description}</li>
-                    <li>ameneties: ${attractionObject.ameneties}</li>
+                    <li>restrooms: ${attractionObject.ameneties.restrooms}</li>
+                    <li>souvenirs: ${attractionObject.ameneties.souvenirs}</li>
+
+                </ul>`;
+
+  return attractionHTMLRepresentation;
+};
+
+const attractionBizConverter = (attractionBizObject) => {
+  const attractionHTMLRepresentation = `
+                <ul>
+                    
+                    <li>name:${attractionBizObject.name}</li>
+                    <li>state: ${attractionBizObject.state}</li>
+                    <li>city: ${attractionBizObject.city}</li>
+                    <li>description: ${attractionBizObject.description}</li>
+                    <li>restrooms: ${attractionBizObject.ameneties.restrooms}</li>
+                    <li>souvenirs: ${attractionBizObject.ameneties.souvenirs}</li>
 
                 </ul>`;
 
