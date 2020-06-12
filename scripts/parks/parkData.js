@@ -18,21 +18,29 @@ const getParkData = (codes) => {
         )
 }
 
-let parkDataSelector = document.querySelector(".park__list").addEventListener("change", e=>{
-   let target =e.target.value
-   clearParkData(target)
-     getParkData(target).then(
-         (parkData) => {
-             showParkData(parkData)
-             return parkData
-     }
-).then(
-    (parkData) => {
-        let zipCode = parkData.data[0].addresses[0].postalCode
-        weatherProvider(zipCode).then(
-            () => {
-                weatherList()
-                 }
+let parkDataSelector = document.querySelector(".park__list").addEventListener("change", e => {
+    let target = e.target.value
+    getParkData(target).then(
+        (parkData) => {
+            clearParkData(target)
+            showParkData(parkData)
+            return parkData
+        }
+
+    ).then(
+        (parkData) => {
+            let latlon = parkData.data[0].latLong
+            let [lat, lon] = latlon.split(",")
+            //console.log("lattitude is", lat, "and longitude is", lon)
+            let [latString, latNum] = lat.split(":")
+            let [lonString, lonNum] = lon.split(":")
+            console.log("The lattitude is", latNum)
+            console.log("But the longitude is", lonNum)
+            weatherProvider(latNum, lonNum).then(
+                () => {
+                    currnetWeatherList()
+                    weatherList()
+                }
             )
         }
     ) 

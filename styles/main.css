@@ -1,3 +1,4 @@
+@import "weather.css";
 body {
     background-color: aqua;
 }
@@ -18,7 +19,7 @@ body {
     border: black solid 1px;
 }
 
-@import "weather.css";
+
 
 
 .itenerary__preview {
@@ -32,3 +33,4 @@ body {
 .bizDetails{
     display:hidden;
 }
+
