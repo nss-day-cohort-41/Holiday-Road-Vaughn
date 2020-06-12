@@ -1,3 +1,14 @@
+// unix time converter
+
+/*
+
+    const unixToHuman = (unix) => {
+    const day = new Date(unix*1000)
+    return `${day}`
+}
+
+console.log(unixToHuman(1592064000 ));
+*/
 
 
 

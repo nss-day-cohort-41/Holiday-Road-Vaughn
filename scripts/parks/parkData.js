@@ -29,6 +29,7 @@ let parkDataSelector = document.querySelector(".park__list").addEventListener("c
 
     ).then(
         (parkData) => {
+            //this generates lat and lon from latlong string in parksData
             let latlon = parkData.data[0].latLong
             let [lat, lon] = latlon.split(",")
             //console.log("lattitude is", lat, "and longitude is", lon)
@@ -36,6 +37,7 @@ let parkDataSelector = document.querySelector(".park__list").addEventListener("c
             let [lonString, lonNum] = lon.split(":")
             console.log("The lattitude is", latNum)
             console.log("But the longitude is", lonNum)
+            //this populates the weather data into the html after user has chosen park
             weatherProvider(latNum, lonNum).then(
                 () => {
                     currnetWeatherList()
