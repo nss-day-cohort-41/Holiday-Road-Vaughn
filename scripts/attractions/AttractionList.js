@@ -1,12 +1,17 @@
+//named var going into DOM where show_attractions_details is in HTML
+
 const attractionVisibilityButton = document.querySelector(
   ".show__attraction__details"
 );
 
+//Put var I just made into an addEventListener function...when click happens on var, look for bizarre_list dropDown [id] value.
 attractionVisibilityButton.addEventListener("click", (event) => {
 //   document.querySelector(".attractionList").classList.toggle("hidden");
     let bizarreDropdown = document.querySelector(".bizarre__list").value;
     console.log(bizarreDropdown)
 
+    //this is empty taco holder array, will put data in later....Iterating single object from our fetch call that calls json objects...
+    
     let detailsData = [];
 
     const getDetails = () => {
@@ -20,6 +25,8 @@ attractionVisibilityButton.addEventListener("click", (event) => {
             detailsData = arrayOfAttractions;
 
             let taco = []
+
+
             
             for (i = 0; i < detailsData.length; i++) {
                 // console.log(detailsData[i].id);
@@ -33,8 +40,8 @@ attractionVisibilityButton.addEventListener("click", (event) => {
             }
             // This data is Taco
             return taco
-        }).then((data) => { 
-            steve(data)
+        }).then((bizData) => { 
+            steve(bizData)
             
             
         })

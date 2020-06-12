@@ -30,7 +30,9 @@ body {
 .park__details__button {
     flex: 1 1 70%;
 }
+
+
 .bizDetails{
     display:hidden;
-}
 
+}

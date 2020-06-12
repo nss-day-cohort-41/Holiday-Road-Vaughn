@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/attractionsmodal.css" />
+
     <title>Holiday Road</title>
-    <link rel="stylesheet" href="/styles/main.css">
-</head>
-<body>
+  </head>
+  <body>
     <main>
         <header>
             <!--adding flex container for banner-->
@@ -27,14 +28,13 @@
                     <option value="park">Choose Attraction</option>
                 </select>
 
-                <button class="show__attraction__details">Attraction Details</button>
-                
-                <select class="eateries__dropdown">
-                <option>Choose Eatery</option>
-                </select>
-                
-                    
-                
+      <section class="dropdown__container">
+        <select class="park__list" id="">
+          <option value="">Choose National Park</option>
+        </select>
+        <select class="bizarre__list" id="">
+          <option value="park">Choose Attraction</option>
+        </select>
 
                 <button class="save_itinerary">save itinerary</button>
             </section>
@@ -52,26 +52,57 @@
             </section>
             <section class="park__selected">
 
+        <select class="eateries__dropdown">
+          <option>Choose Eatery</option>
+        </select>
             </section>
             
             <section class="current_weather">
             </section>
 
-            <section class="eatery__selected"></section>
-            <button class="show__eatery__details">Eatery Details</button>
-            <section class="eateryDetails"></section>
+        <button class="show__eatery__details">Eatery Details</button>
 
-        </article>
-        <aside class="saved__itineraries">
+        <button class="save_itinerary">save itinerary</button>
+      </section>
+      <!--Looking to flex weather data to the right side of the page-->
+      <article class="itinerary__preview">
+        <section class="bizDetails">
+          <!-- Trigger/Open The Modal -->
+          <button id="bizBtn">More Attraction Info</button>
 
-        </aside>
-        
-        <footer>
-            <div class="about__us"></div>
-            <div class="contact"></div>
-            <div class="facebook"></div>
-            <div class="instagram"></div>
-        </footer>
+          <!-- The Modal -->
+          <div id="bizModal" class="bizModal">
+            <!-- Modal content -->
+            <div class="biz-modal-content">
+              <span class="close">&times;</span>
+              <p>All Your Attraction Details,bizList</p>
+              <ul class="bizList"></ul>
+            </div>
+          </div>
+        </section>
+        <section class="eateryDetails"></section>
+        <section class="park__selected"></section>
+        <section class="current_weather" style="height: 20rem;">
+          <h1>The Weather</h1>
+        </section>
+        <!--Will need flex for Details buttons-->
+        <section class="park__preview">
+          <div class="park__details">
+            <button class="park__details__button">Details</button>
+          </div>
+          <div class="weather"></div>
+          <div class="park__attractions">
+            <button class="park__attractions__button">Details</button>
+          </div>
+        </section>
+      </article>
+      <aside class="saved__itineraries"></aside>
+      <footer>
+        <div class="about__us"></div>
+        <div class="contact"></div>
+        <div class="facebook"></div>
+        <div class="instagram"></div>
+      </footer>
     </main>
     <script src="./scripts/Settings.js"></script>
     <script src="./scripts/parks/parkCode.js"></script>
@@ -86,10 +117,10 @@
     <script src="scripts/eateries/Eateries.js"></script>
     <script src="scripts/eateries/EateryList.js"></script>
     <script src="scripts/eateries/EateryProvider.js"></script>
+    <script src="scripts/attractions/bizModal.js"></script>
     <script src="scripts/attractions/attractions.js"></script>
     <script src="scripts/attractions/AttractionList.js"></script>
     <script src="scripts/attractions/AttractionProvider.js"></script>
     <script src="scripts/main.js"></script>
-    
-</body>
+  </body>
 </html>
