@@ -10,13 +10,23 @@
   </head>
   <body>
     <main>
-      <header>
-        <!--adding flex container for banner-->
-        <div class="banner-flex-container">
-          <div class="logo-flex-element">Logo</div>
-          <h1 class="title-flex-element">The Best website ever!!!</h1>
-        </div>
-      </header>
+        <header>
+            <!--adding flex container for banner-->
+            <div class="banner-flex-container">
+                <div class="logo-flex-element">Logo</div>
+                <h1 class="title-flex-element">The Best website ever!!!</h1>
+            </div>
+        </header>
+        
+                
+            <section class="dropdown__container">
+                <select class="park__list" id="">
+                    <option value="null">Choose National Park</option>
+                </select>
+
+                <select class="bizarre__list" id="">
+                    <option value="park">Choose Attraction</option>
+                </select>
 
       <section class="dropdown__container">
         <select class="park__list" id="">
@@ -26,7 +36,21 @@
           <option value="park">Choose Attraction</option>
         </select>
 
-        <button class="show__attraction__details">Attraction Details</button>
+                <button class="save_itinerary">save itinerary</button>
+            </section>
+        <!--Looking to flex weather data to the right side of the page-->
+        <article class="itinerary__preview">
+            <section class="bizDetails"></section>
+            <section class="eateryDetails"></section>
+            <section class="park__preview">
+                <div class="park__selected"> </div>
+                <div class="weather"></div>
+                <div class="park__attractions">
+                    <button class="park__attractions__button">Details</button>
+                </div>
+                
+            </section>
+            <section class="park__selected">
 
         <select class="eateries__dropdown">
           <option>Choose Eatery</option>
@@ -79,8 +103,9 @@
     <script src="./scripts/Settings.js"></script>
     <script src="./scripts/parks/parkCode.js"></script>
     <script src="./scripts/parks/parksList.js"></script>
-    <script src="scripts/parks/dropdown.js"></script>
+    <script src="scripts/parks/parkDropDown.js"></script>
     <script src="scripts/parks/parkData.js"></script>
+    <script src="./scripts/parks/parkDetailButton.js"></script>
     <script src="/scripts/weather/locationGrabber.js"></script>
     <script src="/scripts/weather/weather.js"></script>
     <script src="/scripts/weather/weatherList.js"></script>
