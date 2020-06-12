@@ -40,6 +40,7 @@ let parkDataSelector = document.querySelector(".park__list").addEventListener("c
             //this populates the weather data into the html after user has chosen park
             weatherProvider(latNum, lonNum).then(
                 () => {
+                    clearWeather()
                     currnetWeatherList()
                     weatherList()
                 }
