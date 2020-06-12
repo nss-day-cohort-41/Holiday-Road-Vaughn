@@ -4,7 +4,7 @@ const weatherList = () => {
 
         const weatherHTML = weatherConverter(currentWeatherObject)
 
-        const weatherArticleElement = document.querySelector(".current_weather")
+        const weatherArticleElement = document.querySelector(".weather__forecast")
 
         weatherArticleElement.innerHTML += weatherHTML
     }
