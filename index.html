@@ -19,39 +19,32 @@
         </header>
         
                 
-            <section class="dropdown__container">
-                <select class="park__list" id="">
-                    <option value="null">Choose National Park</option>
-                </select>
-
-                <select class="bizarre__list" id="">
-                    <option value="park">Choose Attraction</option>
-                </select>
 
       <section class="dropdown__container">
         <select class="park__list" id="">
           <option value="">Choose National Park</option>
         </select>
-        <select class="bizarre__list" id="">
-          <option value="park">Choose Attraction</option>
-        </select>
+        
 
-                <button class="save_itinerary">save itinerary</button>
+                
             </section>
         <!--Looking to flex weather data to the right side of the page-->
         <article class="itinerary__preview">
-            <section class="bizDetails"></section>
             <section class="park__preview">
                 <div class="park__selected"> </div>
                 <div class="weather"></div>
                 <div class="park__attractions">
-                    <button class="park__attractions__button">Details</button>
+                    <section class="bizDetails"></section>
+
                 </div>
                 
 
             </section>
             <section class="park__selected">
-
+                <select class="bizarre__list" id="">
+                    <button id="bizBtn">More Attraction Info</button>
+                    <option value="park">Choose Attraction</option>
+                  </select>
         <select class="eateries__dropdown">
           <option>Choose Eatery</option>
         </select>
@@ -68,7 +61,7 @@
       <article class="itinerary__preview">
         <section class="bizDetails">
           <!-- Trigger/Open The Modal -->
-          <button id="bizBtn">More Attraction Info</button>
+         
 
           <!-- The Modal -->
           <div id="bizModal" class="bizModal">
@@ -83,18 +76,8 @@
         <section class="eateryDetails"></section>
         <section class="park__selected"></section>
         <section class="current_weather" style="height: 20rem;">
-          <h1>The Weather</h1>
         </section>
-        <!--Will need flex for Details buttons-->
-        <section class="park__preview">
-          <div class="park__details">
-            <button class="park__details__button">Details</button>
-          </div>
-          <div class="weather"></div>
-          <div class="park__attractions">
-            <button class="park__attractions__button">Details</button>
-          </div>
-        </section>
+    
       </article>
       <aside class="saved__itineraries"></aside>
       <footer>
