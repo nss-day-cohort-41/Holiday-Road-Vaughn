@@ -13,26 +13,26 @@
         <header>
             <!--adding flex container for banner-->
             <div class="banner-flex-container">
-                <div class="logo-flex-element">Logo</div>
-                <h1 class="title-flex-element">The Best website ever!!!</h1>
+                <h1 class="title-flex-element"></h1>
+                <img class="logo" src="personas/logo.png">
             </div>
         </header>
         
                 
 
       <section class="dropdown__container">
-        <select class="park__list" id="">
-          <option value="">Choose National Park</option>
-        </select>
         
 
-                
+         
             </section>
         <!--Looking to flex weather data to the right side of the page-->
-        <article class="itinerary__preview">
-            <section class="park__preview">
-                <div class="park__selected"> </div>
+        <article class="itinerary">
+        <div class="selector__box">
+
                 <div class="weather"></div>
+                <select class="park__list" id="">
+                    <option value="">Choose National Park</option>
+                  </select>
                 <select class="bizarre__list" id="">
                     <option value="park">Choose Attraction</option>
                 </select>
@@ -43,38 +43,42 @@
         </select>
         <button class="show__eatery__details">Eatery Details</button>
             </section>
-
-        
-
-        <button class="save_itinerary">save itinerary</button>
       </section>
+      </div>
       <!--Looking to flex weather data to the right side of the page-->
       <article class="itinerary__preview">
+
+          <div class="weather">
         <section class="current_weather">
         </section>
         <section class="weather__forecast">
         </section>
-        <section class="bizDetails">
+         </div>
+        <div class="biz__eat">
+            <div class="park__selected">
+            </div>
+            <section class="bizDetails">
           <!-- Trigger/Open The Modal -->
          
 
           <!-- The Modal -->
-          <div id="bizModal" class="bizModal">
-            <!-- Modal content -->
-            <div class="biz-modal-content">
-              <span class="close">&times;</span>
-              <p>All Your Attraction Details,bizList</p>
-              <ul class="bizList"></ul>
-            </div>
+            <div id="bizModal" class="bizModal">
+                <!-- Modal content -->
+                <div class="biz-modal-content">
+                <span class="close">&times;</span>
+                <p>All Your Attraction Details,bizList</p>
+                <ul class="bizList"></ul>
+                </div>
           </div>
         </section>
         
         <section class="eateryDetails"></section>
         <section class="park__selected"></section>
-        
+    </div>
     
       </article>
       <aside class="saved__itineraries"></aside>
+      <button class="save_itinerary">save itinerary</button>
       <footer>
         <div class="about__us"></div>
         <div class="contact"></div>
@@ -94,7 +98,6 @@
     <script src="scripts/eateries/Eateries.js"></script>
     <script src="scripts/eateries/EateryList.js"></script>
     <script src="scripts/eateries/EateryProvider.js"></script>
-    <script src="scripts/attractions/bizModal.js"></script>
     <script src="scripts/attractions/attractions.js"></script>
     <script src="scripts/attractions/AttractionList.js"></script>
     <script src="scripts/attractions/AttractionProvider.js"></script>
