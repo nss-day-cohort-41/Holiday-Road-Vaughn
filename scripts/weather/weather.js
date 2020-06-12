@@ -2,14 +2,20 @@ const weatherConverter = (weatherObject) => {
 
     const weatherHTMLRepresentation = `
                 <ul>
-                    <li>Location: ${forecastData.city.name}</li>
-                    <li>date: ${weatherObject.dt_txt}</li>
-                    <li>Low: ${weatherObject.main.temp_min} F</li>
-                    <li> high: ${weatherObject.main.temp_max} F</li>
-                    <li>${weatherObject.weather[0].description}</li>
-                    <li>humidity: ${weatherObject.main.humidity}%</li>
+                    <li>Low: ${weatherObject.temp.min} F</li>
+                    <li> high: ${weatherObject.temp.max} F</li>
+                    <li>${weatherObject.weather[0].main}</li>
+                    <li>humidity: ${weatherObject.humidity}%</li>
+                    
                 </ul>`
 
     return weatherHTMLRepresentation
 
 }
+
+
+/*
+//put these back in html later
+
+
+*/

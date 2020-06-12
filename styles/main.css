@@ -1,3 +1,4 @@
+@import "weather.css";
 body {
     background-color: aqua;
 }
@@ -18,7 +19,7 @@ body {
     border: black solid 1px;
 }
 
-@import "weather.css";
+
 
 
 .itenerary__preview {
@@ -29,12 +30,9 @@ body {
 .park__details__button {
     flex: 1 1 70%;
 }
-<<<<<<< HEAD
-/* .hidden{
-    display:none;
-} */
-=======
+
+
 .bizDetails{
     display:hidden;
+
 }
->>>>>>> master
