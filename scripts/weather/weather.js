@@ -19,3 +19,6 @@ const weatherConverter = (weatherObject) => {
     return weatherHTMLRepresentation
 
 }
+
+const weatherTarget = document.querySelector(".weather__forecast")
+const clearWeather = () => weatherTarget.innerHTML = ""
