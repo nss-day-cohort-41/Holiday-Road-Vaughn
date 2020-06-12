@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    flex: 1 1 15%;
+    flex: 1 1 25%;
     height: 100%;
     
 }
@@ -15,7 +15,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    flex: 1 1 15%;
+    flex: 1 1 25%;
     height: 100%;
     width: fit-content;
 }
