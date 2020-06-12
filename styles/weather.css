@@ -3,7 +3,19 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     flex: 1 1 15%;
+    height: 100%;
     
+}
+
+.weather__forecast {
+    color: brown;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1 1 15%;
+    height: 100%;
+    width: fit-content;
 }
