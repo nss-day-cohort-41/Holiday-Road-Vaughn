@@ -1,26 +1,27 @@
 weatherProvider().then(() => {
-  weatherList();
-});
-showParkDropDown()
+    weatherList();
+  });
+  showParkDropDown()
+  
+  
+  weatherProvider().then(
+      () => {
+          weatherList()
+          
+          
+      }
+  )
+  
+  getEateries().then(
+      () => {
+          eateryList()
+      }
+  )
+  
+  getAttractions().then(
+      () => {
+          attractionList()
+      }
+  )
 
-
-weatherProvider().then(
-    () => {
-        weatherList()
-        
-        
-    }
-)
-
-getEateries().then(
-    () => {
-        eateryList()
-    }
-)
-
-getAttractions().then(
-    () => {
-        attractionList()
-    }
-)
-
+  

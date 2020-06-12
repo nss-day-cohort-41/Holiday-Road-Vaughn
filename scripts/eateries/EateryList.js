@@ -5,7 +5,6 @@ const eateryDetailsButton = document.querySelector(
 eateryDetailsButton.addEventListener("click", (event) => {
 //   document.querySelector(".eateryList").classList.toggle("hidden");
     let eateryDropdown = document.querySelector(".eateries__dropdown").value;
-    console.log(eateryDropdown)
 
     let eateryDetailsData = [];
 
