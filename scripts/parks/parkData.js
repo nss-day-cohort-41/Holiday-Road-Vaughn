@@ -1,6 +1,7 @@
 
 //storage for the call
 let parkData = [];
+const clearParkData = () => contentTarget.innerHTML = ""
 
 //fetch call from NPS
 const getParkData = (codes) => {
@@ -21,6 +22,7 @@ let parkDataSelector = document.querySelector(".park__list").addEventListener("c
     let target = e.target.value
     getParkData(target).then(
         (parkData) => {
+            clearParkData(target)
             showParkData(parkData)
             return parkData
         }
@@ -40,9 +42,6 @@ let parkDataSelector = document.querySelector(".park__list").addEventListener("c
                     weatherList()
                 }
             )
-            
-        } 
-        
-        
-    )
-})
+        }
+    ) 
+    })

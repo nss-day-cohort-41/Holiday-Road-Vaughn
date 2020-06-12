@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
     <title>Holiday Road</title>
     <link rel="stylesheet" href="/styles/main.css">
 </head>
@@ -19,8 +20,9 @@
                 
             <section class="dropdown__container">
                 <select class="park__list" id="">
-                    <option value="">Choose National Park</option>
+                    <option value="null">Choose National Park</option>
                 </select>
+
                 <select class="bizarre__list" id="">
                     <option value="park">Choose Attraction</option>
                 </select>
@@ -41,9 +43,7 @@
             <section class="bizDetails"></section>
             <section class="eateryDetails"></section>
             <section class="park__preview">
-                <div class="park__details">
-                    <button class="park__details__button">Details</button>
-                </div>
+                <div class="park__selected"> </div>
                 <div class="weather"></div>
                 <div class="park__attractions">
                     <button class="park__attractions__button">Details</button>
@@ -54,8 +54,7 @@
 
             </section>
             
-            <section class="current_weather" style=" height: 20rem;">
-                <h1>The Weather</h1>
+            <section class="current_weather">
             </section>
 
         </article>
@@ -73,8 +72,9 @@
     <script src="./scripts/Settings.js"></script>
     <script src="./scripts/parks/parkCode.js"></script>
     <script src="./scripts/parks/parksList.js"></script>
-    <script src="scripts/parks/dropdown.js"></script>
+    <script src="scripts/parks/parkDropDown.js"></script>
     <script src="scripts/parks/parkData.js"></script>
+    <script src="./scripts/parks/parkDetailButton.js"></script>
     <script src="/scripts/weather/locationGrabber.js"></script>
     <script src="/scripts/weather/weather.js"></script>
     <script src="/scripts/weather/weatherList.js"></script>
