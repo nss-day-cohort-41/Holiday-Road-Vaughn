@@ -53,6 +53,7 @@ const eateryDetailsConverter = (eateryObject) => {
                       <p><b>${eateryObject.businessName}</b></p>
                       <p>Description: ${eateryObject.description}</p>
                       <p>Location: ${eateryObject.city}, ${eateryObject.state}</p>
+                      <p>Wheelchair Accessible? ${eateryObject.ameneties.wheelchairAccessible}</p>
                   </div>`;
   
     return eateryHTMLRepresentation;
