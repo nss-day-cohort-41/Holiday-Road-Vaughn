@@ -1,6 +1,7 @@
 
 //storage for the call
 let parkData = [];
+const clearParkData = () => contentTarget.innerHTML = ""
 
 //fetch call from NPS
 const getParkData = (codes) => {
@@ -17,25 +18,22 @@ const getParkData = (codes) => {
         )
 }
 
-let parkDataSelector = document.querySelector(".park__list").addEventListener("change", e => {
-    let target = e.target.value
-    getParkData(target).then(
-        (parkData) => {
-            showParkData(parkData)
-            return parkData
-        }
-
-    ).then(
-        (parkData) => {
-            let zipCode = parkData.data[0].addresses[0].postalCode
-            weatherProvider(zipCode).then(
-                () => {
-                    weatherList()
-                }
+let parkDataSelector = document.querySelector(".park__list").addEventListener("change", e=>{
+   let target =e.target.value
+   clearParkData(target)
+     getParkData(target).then(
+         (parkData) => {
+             showParkData(parkData)
+             return parkData
+     }
+).then(
+    (parkData) => {
+        let zipCode = parkData.data[0].addresses[0].postalCode
+        weatherProvider(zipCode).then(
+            () => {
+                weatherList()
+                 }
             )
-            
-        } 
-        
-        
-    )
-})
+        }
+    ) 
+    })

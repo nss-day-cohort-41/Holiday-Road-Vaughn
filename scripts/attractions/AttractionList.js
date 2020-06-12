@@ -44,20 +44,6 @@ attractionVisibilityButton.addEventListener("click", (event) => {
 });
 
 
-
-
-
-
-
-
-
-
-
-
-/*
-Responsible for generating a list of eatery HTML
-representations, and putting in the browser
-*/
 const attractionList = () => {
     // Iterate the collection of eatery objects
     for (const currentAttractionObject of attractionData) {
@@ -74,10 +60,6 @@ const attractionList = () => {
 }
 
 
-/*
-    This function will convert a single location object to an
-    HTML representation and return it
-*/
 const attractionConverter = (attractionObject) => {
 
     const attractionHTMLRepresentation = `<select name="attraction__list" id="">
@@ -87,6 +69,7 @@ const attractionConverter = (attractionObject) => {
     return attractionHTMLRepresentation
 
 } 
+
 const steve =(object) => { console.log (object)
   // Iterate the collection of attraction objects
 //   for (const currentAttractionObject of attractionData) {

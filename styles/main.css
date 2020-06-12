@@ -1,3 +1,23 @@
+body {
+    background-color: aqua;
+}
+
+.park__header_container {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.show__park_details {
+    padding: 5px;
+    margin: 15px;
+}
+
+.itinerary__preview {
+    background-color: beige;
+    border: black solid 1px;
+}
+
 @import "weather.css";
 
 
