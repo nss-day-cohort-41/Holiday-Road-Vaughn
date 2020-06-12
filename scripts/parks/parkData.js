@@ -36,6 +36,7 @@ let parkDataSelector = document.querySelector(".park__list").addEventListener("c
             console.log("But the longitude is", lonNum)
             weatherProvider(latNum, lonNum).then(
                 () => {
+                    currnetWeatherList()
                     weatherList()
                 }
             )
